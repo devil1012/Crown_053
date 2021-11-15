@@ -8,8 +8,8 @@ const pool=new Pool({
     // port:5432
     connectionString:isProduction?process.env.DATABASE:'postgresql://postgres:0000@localhost:5432/crown_53'
 })
-pool.query('SELECT*from category_53',(err,res)=>{
-    console.log(JSON.stringify(res.rows));
-    pool.end();
-});
+// pool.query('SELECT*from category_53',(err,res)=>{
+//     console.log(JSON.stringify(res.rows));
+//     pool.end();
+// });
 module.exports=pool;
